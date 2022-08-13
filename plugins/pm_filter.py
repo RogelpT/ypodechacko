@@ -46,7 +46,7 @@ async def next_page(bot, query):
         offset = int(offset)
     except:
         offset = 0
-    search = BUTTONS.get(key)
+    search = SINGLE_BUTTON.get(key)
     if not search:
         await query.answer("You are using one of my old messages, please send the request again.", show_alert=True)
         return
@@ -782,7 +782,7 @@ async def advantage_spell_chok(msg):
 
 async def manual_filters(client, message, text=False):
     group_id = message.chat.id
-    name = text or message.text
+    name = What ?
     reply_id = message.reply_to_message.id if message.reply_to_message else message.id
     keywords = await get_filters(group_id)
     for keyword in reversed(sorted(keywords, key=len)):
