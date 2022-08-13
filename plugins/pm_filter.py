@@ -26,7 +26,7 @@ import logging
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.ERROR)
 
-BUTTONS = {}
+BUTTONS = {SINGLE_BUTTON}
 SPELL_CHECK = {}
 
 
